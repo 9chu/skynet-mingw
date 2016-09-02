@@ -1,9 +1,12 @@
 #ifndef PLATFORM_H
 #define PLATFORM_H
 
+#define _POSIX
+
 #include <unistd.h>
 #include <stdbool.h>
 #include "sys/socket.h"
+#include "sys/types.h"
 
 #define HAVE_STRUCT_TIMESPEC
 

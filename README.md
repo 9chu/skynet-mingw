@@ -1,3 +1,5 @@
+本项目修改了skynet-mingw，使之能在mingw-w64上进行编译。
+
 # 关于skynet-mingw [![Build status](https://ci.appveyor.com/api/projects/status/9j45lldyxmfdau3r?svg=true)](https://ci.appveyor.com/project/dpull/skynet-mingw)
 
 [skynet-mingw](https://github.com/dpull/skynet-mingw) 是[skynet](https://github.com/cloudwu/skynet)的windows平台的实现。其主要特点是：
@@ -11,8 +13,9 @@
 
 1. 安装 [MinGW](http://sourceforge.net/projects/mingw/files/)
 1. 安装 `gcc g++`
-1. 安装 `pthread (dev)`
-1. 运行 `MinGW\msys\1.0\msys.bat`
+1. 安装 `mingw-w64-i686-libwinpthread-git`
+1. 安装 `mingw-w64-i686-dlfcn`
+1. 运行 `msys2_shell.cmd -mingw32`
 1. 运行 `prepare.sh`
 1. 运行 `make`
 
