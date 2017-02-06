@@ -11,6 +11,8 @@
 #define HAVE_STRUCT_TIMESPEC
 
 /*<signal.h>*/
+typedef int sigset_t;
+
 #define	SIGHUP	1
 #define SA_RESTART	0x0002
 struct sigaction {
@@ -26,7 +28,7 @@ int sigaction(int sig, const struct sigaction *act, struct sigaction *oact);
 
 char *strsep(char **stringp, const char *delim);
 
-enum { CLOCK_THREAD_CPUTIME_ID, CLOCK_REALTIME, CLOCK_MONOTONIC };
+//enum { CLOCK_THREAD_CPUTIME_ID, CLOCK_REALTIME, CLOCK_MONOTONIC };
 int clock_gettime(int what, struct timespec *ti);
 
 enum { LOCK_EX, LOCK_NB };
